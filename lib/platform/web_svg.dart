@@ -34,12 +34,14 @@ class PlatformSvg extends Interface.PlatformSvg {
 
   @override
   Widget build(BuildContext context) {
-    return SvgPicture.network(
-      "assets/$assetName",
+    return Container(
       width: width,
       height: height,
-      semanticLabel: semanticLabel,
-      fit: fit,
+      child: SvgPicture.network(
+        "assets/$assetName",
+        semanticsLabel: semanticLabel,
+        fit: fit,
+      ),
     );
   }
 
