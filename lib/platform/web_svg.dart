@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 import 'interface_svg.dart' as Interface;
 
@@ -33,7 +34,7 @@ class PlatformSvg extends Interface.PlatformSvg {
 
   @override
   Widget build(BuildContext context) {
-    return Image.network(
+    return SvgPicture.network(
       "assets/$assetName",
       width: width,
       height: height,
