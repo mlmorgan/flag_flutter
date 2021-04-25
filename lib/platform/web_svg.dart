@@ -38,7 +38,7 @@ class PlatformSvg extends Interface.PlatformSvg {
       "assets/$assetName",
       width: width,
       height: height,
-      semanticLabel: semanticLabel,
+      semanticsLabel: semanticLabel,
       fit: fit,
     );
   }
